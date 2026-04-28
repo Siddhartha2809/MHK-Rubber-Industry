@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-site-verification" content="_PK1nMWjgeH4M-jiBxTH71OtlphdCUlYlWqLJUg8a0c" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MHK Rubber Industry provides high-quality industrial rubber products and engineering solutions.">
+
+  <meta name="keywords" content="MHK Rubber, rubber industry, industrial rubber, rubber manufacturing">
     <title>MHK Rubber Industry | Visakhapatnam</title>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Professional Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -86,7 +88,7 @@
             transform: rotate(15deg);
         }
 
-        .logo-text h1 {
+        .logo-text .brand-name {
             font-size: 1.5rem;
             font-weight: 800;
             letter-spacing: 1px;
@@ -191,7 +193,7 @@
             display: block;
         }
 
-        .hero h2 {
+        .hero h1 {
             font-size: 4rem;
             font-weight: 800;
             line-height: 1.1;
@@ -366,7 +368,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Updated layout for 3 columns */
             gap: 2rem;
         }
 
@@ -664,7 +666,7 @@
 
         /* --- Responsive Design --- */
         @media (max-width: 992px) {
-            .hero h2 { font-size: 3rem; }
+            .hero h2, .hero h1 { font-size: 3rem; }
             .about-container { grid-template-columns: 1fr; }
             .about-image::after { display: none; }
             .services-grid { grid-template-columns: 1fr; }
@@ -673,7 +675,7 @@
 
         @media (max-width: 768px) {
             nav ul { display: none; }
-            .hero h2 { font-size: 2.5rem; }
+            .hero h2, .hero h1 { font-size: 2.5rem; }
             .info-strip { flex-direction: column; align-items: flex-start; }
             .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
             .footer-bottom { flex-direction: column; text-align: center; gap: 1rem; }
@@ -683,12 +685,11 @@
 </head>
 <body>
 
-    <!-- Header Navigation -->
     <header id="header">
         <a href="#" class="logo">
             <i class="fa-solid fa-industry logo-icon"></i>
             <div class="logo-text">
-                <h1>MHK <span>Rubber</span></h1>
+                <div class="brand-name">MHK <span>Rubber</span></div>
             </div>
         </a>
         <nav>
@@ -703,11 +704,10 @@
         </a>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content fade-in">
             <span class="hero-subtitle">Industrial Excellence</span>
-            <h2>Engineered to<br>Resist & Last</h2>
+            <h1>Industrial Rubber Lining<br>& Manufacturing</h1>
             <p>Premium rubber lining and manufacturing solutions for chemical, water, and heavy mechanical applications in Visakhapatnam.</p>
             <a href="tel:9000851961" class="btn-large">
                 <i class="fa-solid fa-phone-volume"></i> Call Now: 9000851961
@@ -715,7 +715,6 @@
         </div>
     </section>
 
-    <!-- Info Strip -->
     <div class="info-strip">
         <div class="info-item">
             <i class="fa-solid fa-map-location-dot"></i>
@@ -731,7 +730,6 @@
         </div>
     </div>
 
-    <!-- About Section -->
     <section id="about" class="fade-in">
         <div class="about-container">
             <div class="about-image">
@@ -752,7 +750,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services-section fade-in">
         <div class="section-header">
             <span class="section-subtitle">Core Capabilities</span>
@@ -760,7 +757,6 @@
         </div>
         
         <div class="services-grid">
-            <!-- Service 1 -->
             <div class="service-card">
                     <img src="acid.webp" alt="Acid Tank" class="service-bg">
                     <div class="service-content">
@@ -769,7 +765,6 @@
                     <p>Specialized protective lining for chemical storage tanks. Designed to withstand highly corrosive environments, ensuring zero chemical degradation and extending the lifespan of your critical storage infrastructure.</p>
                 </div>
             </div>
-            <!-- Service 2 -->
             <div class="service-card">
                 <img src="water.jpg" alt="Water Pipes" class="service-bg">
                 <div class="service-content">
@@ -778,10 +773,17 @@
                     <p>Premium internal and external rubber lining for Mild Steel (MS) pipes. Prevents rust and mineral build-up in water treatment and transport systems, guaranteeing long-term flow efficiency.</p>
                 </div>
             </div>
+            <div class="service-card">
+                <img src="lagging.jpg" alt="Pulley Rubber Lagging" class="service-bg">
+                <div class="service-content">
+                    <div class="service-icon"><i class="fa-solid fa-gear"></i></div>
+                    <h3>Pulley Rubber Lagging</h3>
+                    <p>High-friction rubber lagging for conveyor pulleys. Designed to eliminate belt slippage, increase drive efficiency, and protect the pulley shell from extreme wear and tear.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Products Section (UPDATED WITH IMAGES) -->
     <section id="products" class="fade-in">
         <div class="section-header">
             <span class="section-subtitle">Manufacturing</span>
@@ -789,7 +791,6 @@
         </div>
 
         <div class="products-grid">
-            <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="rubber.jpg" alt="Industrial Rubber Hoses">
@@ -799,7 +800,6 @@
                     <p>Heavy-duty hoses built for safe, efficient fluid transport under extreme high pressure and varying temperature conditions.</p>
                 </div>
             </div>
-            <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="rings.jpg" alt="Rubber O Rings">
@@ -809,7 +809,6 @@
                     <p>Precision-molded sealing solutions to absolutely prevent leaks in pumps, valves, and heavy mechanical connections.</p>
                 </div>
             </div>
-            <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="sheets.jpg" alt="Rubber Sheets">
@@ -819,10 +818,36 @@
                     <p>Versatile, high-impact rubber sheets utilized for heavy-duty gasketing, flooring, and ultimate surface protection.</p>
                 </div>
             </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gasketsheet.jpg" alt="Rubber Gasket Sheets">
+                </div>
+                <div class="product-info">
+                    <h3>Rubber Gasket Sheets</h3>
+                    <p>High-performance gasket sheets engineered for custom sealing applications, providing excellent resistance to heat, oil, and chemicals.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gasket.webp" alt="Rubber Beading Gaskets">
+                </div>
+                <div class="product-info">
+                    <h3>Rubber Beading Gaskets</h3>
+                    <p>Durable extruded rubber profiles designed to ensure reliable, weather-tight seals for industrial enclosures, doors, and windows.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="beading.jpg" alt="Rubber Sponge Beading">
+                </div>
+                <div class="product-info">
+                    <h3>Rubber Sponge Beading</h3>
+                    <p>Highly flexible and resilient sponge rubber beading offering superior shock absorption, thermal insulation, and gap-filling properties.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Value Proposition -->
     <section class="values-section fade-in">
         <div class="section-header">
             <span class="section-subtitle">The MHK Advantage</span>
@@ -853,7 +878,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-grid">
             <div class="footer-brand">
@@ -897,12 +921,10 @@
         </div>
     </footer>
 
-    <!-- Floating Action Button for Quick Contact -->
     <a href="tel:9000851961" class="floating-btn" aria-label="Call Us Now">
         <i class="fa-solid fa-phone-volume"></i>
     </a>
 
-    <!-- Interactive Scripts -->
     <script>
         // Sticky Header Script
         const header = document.getElementById('header');
