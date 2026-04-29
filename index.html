@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MHK Rubber Industry provides high-quality industrial rubber products and engineering solutions.">
-
-  <meta name="keywords" content="MHK Rubber, rubber industry, industrial rubber, rubber manufacturing">
+    <meta name="keywords" content="MHK Rubber, rubber industry, industrial rubber, rubber manufacturing">
     <title>MHK Rubber Industry | Visakhapatnam</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,34 +72,18 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
-            color: var(--text-light);
             text-decoration: none;
         }
 
-        .logo-icon {
-            font-size: 2rem;
-            color: var(--accent);
-            transition: transform 0.3s;
+        .nav-logo-img {
+            max-height: 55px; /* Adjust this value to make the logo larger or smaller */
+            width: auto;
+            transition: transform 0.3s ease;
+            border-radius: 4px; /* Optional: adds a slight rounding to the logo's corners */
         }
         
-        .logo:hover .logo-icon {
-            transform: rotate(15deg);
-        }
-
-        .logo-text .brand-name {
-            font-size: 1.5rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            line-height: 1;
-        }
-
-        .logo-text span {
-            font-size: 0.8rem;
-            font-weight: 400;
-            color: var(--text-muted);
-            letter-spacing: 2px;
-            text-transform: uppercase;
+        .logo:hover .nav-logo-img {
+            transform: scale(1.05);
         }
 
         nav ul {
@@ -680,6 +663,7 @@
             .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
             .footer-bottom { flex-direction: column; text-align: center; gap: 1rem; }
             .floating-btn { bottom: 20px; right: 20px; width: 55px; height: 55px; font-size: 1.5rem; }
+            .nav-logo-img { max-height: 45px; } /* Slightly smaller logo on mobile */
         }
     </style>
 </head>
@@ -687,10 +671,7 @@
 
     <header id="header">
         <a href="#" class="logo">
-            <i class="fa-solid fa-industry logo-icon"></i>
-            <div class="logo-text">
-                <div class="brand-name">MHK <span>Rubber</span></div>
-            </div>
+            <img src="MHK Logo1.png" alt="MHK Rubber Industry Logo" class="nav-logo-img">
         </a>
         <nav>
             <ul>
@@ -758,7 +739,7 @@
         
         <div class="services-grid">
             <div class="service-card">
-                    <img src="acid.webp" alt="Acid Tank" class="service-bg">
+                    <img src="tank.jpg" alt="Acid Tank" class="service-bg">
                     <div class="service-content">
                     <div class="service-icon"><i class="fa-solid fa-flask-vial"></i></div>
                     <h3>Acid Tank Rubber Lining</h3>
@@ -766,7 +747,7 @@
                 </div>
             </div>
             <div class="service-card">
-                <img src="water.jpg" alt="Water Pipes" class="service-bg">
+                <img src="pipe.jpeg" alt="Water Pipes" class="service-bg">
                 <div class="service-content">
                     <div class="service-icon"><i class="fa-solid fa-faucet-drip"></i></div>
                     <h3>MS Water Pipe Lining</h3>
@@ -774,11 +755,11 @@
                 </div>
             </div>
             <div class="service-card">
-                <img src="lagging.jpg" alt="Pulley Rubber Lagging" class="service-bg">
+                <img src="lagging.jpg" alt="Ceramic Pulley Lagging" class="service-bg">
                 <div class="service-content">
                     <div class="service-icon"><i class="fa-solid fa-gear"></i></div>
-                    <h3>Pulley Rubber Lagging</h3>
-                    <p>High-friction rubber lagging for conveyor pulleys. Designed to eliminate belt slippage, increase drive efficiency, and protect the pulley shell from extreme wear and tear.</p>
+                    <h3>Rubber & Ceramic Lagging</h3>
+                    <p>Advanced lagging solutions including standard diamond rubber and high-performance ceramic tiles. Engineered to eliminate belt slippage, maximize grip in wet conditions, and provide extreme wear resistance for heavy-duty conveyor systems.</p>
                 </div>
             </div>
         </div>
@@ -829,7 +810,7 @@
             </div>
             <div class="product-card">
                 <div class="product-image">
-                    <img src="gasket.webp" alt="Rubber Beading Gaskets">
+                    <img src="gasket.jpg" alt="Rubber Beading Gaskets">
                 </div>
                 <div class="product-info">
                     <h3>Rubber Beading Gaskets</h3>
@@ -843,6 +824,15 @@
                 <div class="product-info">
                     <h3>Rubber Sponge Beading</h3>
                     <p>Highly flexible and resilient sponge rubber beading offering superior shock absorption, thermal insulation, and gap-filling properties.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="revetement-tambour-caoutchouc-losange.jpg" alt="Diamond Rubber Lagging">
+                </div>
+                <div class="product-info">
+                    <h3>Diamond Rubber Lagging</h3>
+                    <p>Classic high-friction diamond pattern rubber sheets designed for easy installation and excellent water shedding capabilities on drive pulleys.</p>
                 </div>
             </div>
         </div>
